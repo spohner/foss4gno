@@ -42,7 +42,7 @@
 			<div class="slides">
 				<section data-background-image="img/bokeh.jpg">
 					<h1></h1>
-					<h2>Open-source frontend mot en <span><img style="border:none;background:none;box-shadow:none;margin:0 0 -20px 0;transform:rotate(-20deg);"height="80px" src="img/esrilogo.png" alt=""></span>backend?</h2>
+					<h2>Open-source web frontend mot en <span><img style="border:none;background:none;box-shadow:none;margin:0 0 -20px 0;transform:rotate(-20deg);"height="80px" src="img/esrilogo.png" alt=""></span>backend?</h2>
 					<p>
 						<small>Av <a href="http://blog.spohner.io">Steffen Pøhner Henriksen</a> / <a href="http://twitter.com/spohner">@spohner</a></small>
 					</p>
@@ -244,11 +244,17 @@ var fs = client.featureservice( params , function(err, data){
 					</pre>
 				</section>
 				<section>
-				<h3>Klienter</h3>
+				<h3>Klienttriks</h3>
 					<ul>
-						<li>Open Layers</li>
-						<li>Mapbox GL JS</li>					
-						<li>Esri-leaflet</li>
+						<li class="fragment">XYZ</li>
+						<li class="fragment">Mapbox GL JS</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Open Layers 3</h2>
+					<ul>
+						<li class="fragment">ol.format.EsriJSON</li>
+						<li class="fragment">ol.source.TileArcGISRest</li>
 					</ul>
 				</section>
 				<section>
@@ -284,7 +290,11 @@ var fs = client.featureservice( params , function(err, data){
 				<section data-background-image="img/bokeh.jpg">
 					<h2>Oppsummering</h2>
 					<ul>
-						<li></li>
+						<li>Mye kan løses med direkte REST-kall</li>
+						<li>terraformer.io for konvertering av formater</li>
+						<li>geoservices-js</li>
+						<li>Open Layers 3</li>
+						<li>Esri-leaflet</li>
 					</ul>
 				</section>
 				<section data-background-image="img/bokeh.jpg">
